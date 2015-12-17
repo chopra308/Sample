@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tutorial: Hello Dojo!</title>
+	<script type="text/javascript" src="http://o.aolcdn.com/dojo/1.1/dojo/dojo.xd.js"></script>
+	<style>
+	#Date1{
+	position:absolute;
+	height:200px;
+	width:200px;
+	border:2px solid green}
+	</style>
+</head>
+<body>
+<div id="Date1"/>
+<script type="text/javacsript">
+dojo require dojo.require("dijit.form.DateTextBox");
+dojo.addOnLoad(function() {
+makeDateTextBox();
+});
+function makeDateTextBox() {
+new dijit.form.DateTextBox({
+id: "date-box-2",
+required: true },
+"Date1"
+);
+}</script>"
+</body>
+</html>
