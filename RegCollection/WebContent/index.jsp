@@ -25,7 +25,7 @@
 		<tr>
 			<td>Last Name</td>
 			<td><html:text property="lname"/></td>
-			<td><html:errors property="l_name"/></td>
+			<td><html:errors property="e_lname"/></td>
 		</tr>
 		<tr>
 			<td></td>
