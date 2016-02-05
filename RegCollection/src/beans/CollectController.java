@@ -25,6 +25,13 @@ public class CollectController extends Action {
 		//Map<Integer, List<String>> peoplebyid = new HashMap<Integer, List<String>>();
 		List<CollectBackup> people= new ArrayList<CollectBackup>();
 		people.add(backform);
+		
+		for (CollectBackup item: people ){
+			System.out.println(item.getId());
+			System.out.println(item.getFname());
+			System.out.println(item.getLname());
+		}
+		
 		HttpSession session= request.getSession();
 		
 		session.setAttribute("people", people);

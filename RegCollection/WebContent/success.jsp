@@ -9,24 +9,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Record inserted</title>
 <style type="text/css">
-	td {
+	table {
+		border: 2px solid red
+	}
+	th,td {
 		border: 1px solid red
 	}
-
 </style>
 </head>
 <body>
 
 <h1>Successfully inserted</h1>
 
-
+	<table>
+		<tr>
+			<th>Employee ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+		</tr>
 	<logic:iterate name="people" id="peopleid">
-  		<!--<bean:define id="person" name="mapEntry" property="value"/>-->
+  		
   		<tr>
-    		<td><bean:write name="peopleid" property="id"/></td>
+    		<td align="right"><bean:write name="peopleid" property="id"/></td>
     		<td><bean:write name="peopleid" property="fname"/></td>
     		<td><bean:write name="peopleid" property="lname"/></td>
  		 </tr>
+ 		
 	</logic:iterate>
+	</table>
 </body>
+
+
 </html>
